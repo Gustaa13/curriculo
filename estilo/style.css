@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+body {
+    margin: 0px;
+    padding: 0px;
+    
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+header {
+    display: inline-block;
+    background-color: #14181bef;
+    color: rgb(211, 211, 211);
+    max-width: 350px;
+    padding: 50px;
+}
+
+div#foto-de-perfil {
+    background-image: url(../imagens/EDU_9453-500.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+header div.blocos-de-texto {
+    padding: 10px 0px;
+    border-top: 1px solid  #47545fef;
+}
+
+header strong {
+    color: #BF7A26;
+}
+
+header p {
+    text-align: justify;
+}
+
+header a {
+    color: white;
+}
+
+header a:hover {
+    color: #BF7A26;
+}
+
+header h2 {
+    color: #D9A23D;
+    text-transform: uppercase; 
+}
+
+header h2#primeira-h2 {
+    border-top: none;
+}
+
+main {
+    display: inline-block;
+    padding: 20px;
+    margin-top: 0px;
+}
