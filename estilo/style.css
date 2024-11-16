@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
 body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(161, 161, 161);
     margin: 0px;
     padding: 0px;
     
@@ -10,7 +14,8 @@ body {
 header {
     display: inline-block;
     background-color: #14181bef;
-    color: rgb(211, 211, 211);
+    color: rgb(211, 211, 211);    
+    height: auto;
     max-width: 350px;
     padding: 50px;
 }
@@ -20,16 +25,24 @@ div#foto-de-perfil {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    
     border-radius: 50%;
     height: 250px;
     width: 250px;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+}
+
+header div.informacoes-pessoais > h1 {
+    padding-top: 20px;
+    border-top: 1px solid  #47545fef;
+    color: #D9A23D;
+    font-size: 25px;
+    letter-spacing: 3px;
 }
 
 header div.blocos-de-texto {
-    padding: 10px 0px;
+    padding-top: 5px;
+    margin: 30px 0px;
     border-top: 1px solid  #47545fef;
 }
 
@@ -38,6 +51,7 @@ header strong {
 }
 
 header p {
+    font-size: 16px;
     text-align: justify;
 }
 
@@ -52,14 +66,68 @@ header a:hover {
 header h2 {
     color: #D9A23D;
     text-transform: uppercase; 
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 400;
 }
 
-header h2#primeira-h2 {
-    border-top: none;
+header h3 {
+    font-size: 18px;
+    font-weight: 400;
 }
 
 main {
     display: inline-block;
-    padding: 20px;
+    background-color: white;
+    padding: 50px;
+    height: auto;
+    width: auto;
+    max-width: 500px;
+}
+
+main h2.tema-topicos {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #261D0D;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+}
+
+main p.competencias {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid black;
+    margin: 5px 3px;
+}
+
+main ul {
+    margin: 0px;
+    padding-left: 20px;
+}
+
+main p.descricoes {
+    display: inline-block;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+main p.data {
+    border-left: 1px solid black;
+}
+
+main div.caixa-descricoes {
+    text-align: right;
+}
+
+main h3 {
+    font-size: 18px;
     margin-top: 0px;
+    letter-spacing: 1px;
+}
+
+main ul > li {
+    font-size: 16px;
+}
+
+main h2#competencias {
+    margin-bottom: 10px;
 }
