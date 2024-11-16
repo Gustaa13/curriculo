@@ -47,7 +47,7 @@ header div.blocos-de-texto {
 }
 
 header strong {
-    color: #BF7A26;
+    color: white;
 }
 
 header p {
@@ -73,12 +73,13 @@ header h2 {
 
 header h3 {
     font-size: 18px;
+    color: white;
     font-weight: 400;
 }
 
 main {
     display: inline-block;
-    background-color: white;
+    background-color: rgb(245, 245, 245);
     padding: 50px;
     height: auto;
     width: auto;
@@ -90,6 +91,7 @@ main h2.tema-topicos {
     border-bottom: 1px solid #261D0D;
     margin-bottom: 0px;
     letter-spacing: 2px;
+    color: black;
 }
 
 main p.competencias {
@@ -101,31 +103,54 @@ main p.competencias {
 
 main ul {
     margin: 0px;
+    margin-top: 15px;
     padding-left: 20px;
 }
 
+main li {
+    padding: 2px 0px;
+}
+
 main p.descricoes {
-    display: inline-block;
+    margin: 2px 0px;
     font-size: 12px;
     padding-left: 5px;
 }
 
-main p.data {
-    border-left: 1px solid black;
+main p.descricao-principal {
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 5px;
+    margin: 2px 0px;
+    text-transform: uppercase;
 }
 
 main div.caixa-descricoes {
-    text-align: right;
+    display: inline-block;
+    width: 30%;
+}
+
+main div.caixa-de-topicos {
+    display: inline-block;
+    padding-left: 10px;
+    width: 60%;
+    border-left: 1px solid black;
+}
+
+main > div {
+    margin-bottom: 50px;
+}
+
+main div > div {
+    margin-top: 15px;
+    vertical-align: top;
 }
 
 main h3 {
     font-size: 18px;
     margin-top: 0px;
+    margin-bottom: 0px;
     letter-spacing: 1px;
-}
-
-main ul > li {
-    font-size: 16px;
 }
 
 main h2#competencias {
