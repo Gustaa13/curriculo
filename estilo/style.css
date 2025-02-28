@@ -1,10 +1,27 @@
 @charset "UTF-8";
 
+:root {
+    --cor-fundo-geral:rgb(161, 161, 161);
+
+    --cor-fundo-cabecalho: #14181bef;
+    --cor-texto-cabecalho: rgb(211, 211, 211);
+    --cor-texto-cabecalho-destacado: white;
+    --cor-bordas-cabecalho: #47545fef;
+
+    --cor-fundo-principal: rgb(245, 245, 245);
+    --cor-texto-principal: black;
+    --cor-texto-principal-destacado: ;
+    --cor-bordas-principal: #261D0D;
+    
+    --cor-primaria: #D9A23D;
+    --cor-primaria-escura: #BF7A26;
+}
+
 body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgb(161, 161, 161);
+    background-color: var(--cor-fundo-geral);
     margin: 0px;
     padding: 0px;
     
@@ -17,8 +34,8 @@ li {
 
 header {
     display: inline-block;
-    background-color: #14181bef;
-    color: rgb(211, 211, 211);    
+    background-color: var(--cor-fundo-cabecalho);
+    color: var(--cor-texto-cabecalho);    
     height: auto;
     max-width: 350px;
     padding: 50px;
@@ -38,8 +55,8 @@ div#foto-de-perfil {
 
 header div.informacoes-pessoais > h1 {
     padding-top: 20px;
-    border-top: 1px solid  #47545fef;
-    color: #D9A23D;
+    border-top: 1px solid var(--cor-bordas-cabecalho);
+    color: var(--cor-primaria);
     font-size: 25px;
     letter-spacing: 3px;
 }
@@ -47,11 +64,11 @@ header div.informacoes-pessoais > h1 {
 header div.blocos-de-texto {
     padding-top: 5px;
     margin: 30px 0px;
-    border-top: 1px solid  #47545fef;
+    border-top: 1px solid  var(--cor-bordas-cabecalho);
 }
 
 header strong {
-    color: white;
+    color: var(--cor-texto-cabecalho-destacado);
 }
 
 header p {
@@ -61,15 +78,15 @@ header p {
 }
 
 header a {
-    color: white;
+    color: var(--cor-texto-cabecalho-destacado);
 }
 
 header a:hover {
-    color: #BF7A26;
+    color: var(--cor-primaria-escura);
 }
 
 header h2 {
-    color: #D9A23D;
+    color: var(--cor-primaria);
     text-transform: uppercase; 
     letter-spacing: 1px;
     font-size: 18px;
@@ -78,13 +95,13 @@ header h2 {
 
 header h3 {
     font-size: 18px;
-    color: white;
+    color: var(--cor-texto-cabecalho-destacado);
     font-weight: 400;
 }
 
 main {
     display: inline-block;
-    background-color: rgb(245, 245, 245);
+    background-color: var(--cor-fundo-principal);
     padding: 30px;
     height: auto;
     width: auto;
@@ -93,16 +110,16 @@ main {
 
 main h2.tema-topicos {
     padding-bottom: 10px;
-    border-bottom: 1px solid #261D0D;
+    border-bottom: 1px solid var(--cor-bordas-principal);
     margin-bottom: 0px;
     letter-spacing: 2px;
-    color: black;
+    color: var(--cor-texto-principal);
 }
 
 main p.competencias {
     display: inline-block;
     padding: 5px 10px;
-    border: 1px solid black;
+    border: 1px solid var(--cor-bordas-principal);
     margin: 5px 3px;
 }
 
@@ -140,7 +157,7 @@ main div.caixa-de-topicos {
     display: inline-block;
     padding-left: 10px;
     width: 60%;
-    border-left: 1px solid black;
+    border-left: 1px solid var(--cor-bordas-principal);
 }
 
 main > div {
