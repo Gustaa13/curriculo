@@ -102,7 +102,7 @@ header h3 {
 main {
     display: inline-block;
     background-color: var(--cor-fundo-principal);
-    padding: 30px;
+    padding: 50px;
     height: auto;
     width: auto;
     max-width: 450px;
@@ -125,12 +125,12 @@ main p.competencias {
 
 main ul {
     margin: 0px;
-    margin-top: 15px;
+    margin-top: 10px;
     padding-left: 20px;
 }
 
 main li {
-    padding: 2px 0px;
+    padding: 4px 0px;
 }
 
 main p.descricoes {
@@ -178,4 +178,10 @@ main h3 {
 
 main h2#competencias {
     margin-bottom: 10px;
+}
+
+@media (max-width: 1015px) {
+    main {
+        max-width: 350px;
+    }
 }
