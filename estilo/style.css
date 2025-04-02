@@ -69,6 +69,10 @@ header div.informacoes-pessoais > div {
     margin: 20px 0px;
 }
 
+header div.informacoes-pessoais > div > p {
+    max-width: auto;
+}
+
 img.icone {
     margin-right: 10px;
 }
@@ -87,7 +91,6 @@ header p {
     font-size: 16px;
     text-align: justify;
     line-height: 1.4;
-    max-width: 150px;
 }
 
 header a {
