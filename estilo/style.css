@@ -13,8 +13,9 @@
     --cor-texto-principal-destacado: ;
     --cor-bordas-principal: #261D0D;
     
+    --cor-primaria-clara: #d1b889;
     --cor-primaria: #D9A23D;
-    --cor-primaria-escura: #BF7A26;
+    --cor-primaria-escura: #bb7929;
 }
 
 body {
@@ -36,7 +37,6 @@ header {
     display: inline-block;
     background-color: var(--cor-fundo-cabecalho);
     color: var(--cor-texto-cabecalho);    
-    height: auto;
     max-width: 350px;
     padding: 50px;
 }
@@ -61,6 +61,18 @@ header div.informacoes-pessoais > h1 {
     letter-spacing: 3px;
 }
 
+header div.informacoes-pessoais > div {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 20px;
+    margin: 20px 0px;
+}
+
+img.icone {
+    margin-right: 10px;
+}
+
 header div.blocos-de-texto {
     padding-top: 5px;
     margin: 30px 0px;
@@ -78,7 +90,8 @@ header p {
 }
 
 header a {
-    color: var(--cor-texto-cabecalho-destacado);
+    color: var(--cor-primaria-clara); 
+    text-decoration: none;
 }
 
 header a:hover {
@@ -103,8 +116,6 @@ main {
     display: inline-block;
     background-color: var(--cor-fundo-principal);
     padding: 50px;
-    height: auto;
-    width: auto;
     max-width: 450px;
 }
 
