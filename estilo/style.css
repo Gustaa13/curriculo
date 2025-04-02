@@ -87,6 +87,7 @@ header p {
     font-size: 16px;
     text-align: justify;
     line-height: 1.4;
+    max-width: 150px;
 }
 
 header a {
