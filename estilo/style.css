@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
 :root {
-    --cor-fundo-geral:rgb(161, 161, 161);
+    --cor-fundo-geral:rgb(155, 155, 155);
 
     --cor-fundo-cabecalho: #14181bef;
     --cor-texto-cabecalho: rgb(211, 211, 211);
-    --cor-texto-cabecalho-destacado: white;
+    --cor-texto-cabecalho-destacado: rgb(238, 238, 238);
     --cor-bordas-cabecalho: #47545fef;
 
-    --cor-fundo-principal: rgb(245, 245, 245);
+    --cor-fundo-principal: rgb(235, 235, 235);
     --cor-texto-principal: black;
     --cor-texto-principal-destacado: ;
     --cor-bordas-principal: #261D0D;
@@ -126,7 +126,7 @@ main {
 main h2.tema-topicos {
     padding-bottom: 10px;
     border-bottom: 1px solid var(--cor-bordas-principal);
-    margin-bottom: 0px;
+    margin: 0px;
     letter-spacing: 2px;
     color: var(--cor-texto-principal);
 }
@@ -140,7 +140,6 @@ main p.competencias {
 
 main ul {
     margin: 0px;
-    margin-top: 10px;
     padding-left: 20px;
 }
 
@@ -180,19 +179,44 @@ main > div {
 }
 
 main div > div {
-    margin-top: 15px;
+    margin-top: 20px;
     vertical-align: top;
 }
 
 main h3 {
     font-size: 18px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
     letter-spacing: 1px;
 }
 
 main h2#competencias {
     margin-bottom: 10px;
+}
+
+main #cursos {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+main .cursos-topicos {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0px;
+}
+
+main .cursos-topicos h4 {
+    font-size: 14px;
+    margin: 5px 0px;
+}
+
+main .cursos-topicos ul {
+    margin: 0px 15px;
+    font-size: 14px;
+    border-left: 1px solid var(--cor-bordas-principal);
+    padding-left: 30px;
 }
 
 @media (max-width: 1015px) {
