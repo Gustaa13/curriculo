@@ -60,6 +60,7 @@ header {
     padding: 50px;
 }
 
+/*
 div#foto-de-perfil {
     background-image: url(../imagens/EDU_9453-500.jpg);
     background-repeat: no-repeat;
@@ -71,6 +72,7 @@ div#foto-de-perfil {
     margin: auto;
     margin-bottom: 40px;
 }
+*/
 
 header div.informacoes-pessoais > h1 {
     padding-bottom: 10px;
