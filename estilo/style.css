@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 :root {
-    --cor-fundo-geral:rgb(155, 155, 155);
+    /*--cor-fundo-geral:rgb(155, 155, 155);
 
     --cor-fundo-cabecalho: #14181bef;
     --cor-texto-cabecalho: rgb(211, 211, 211);
@@ -13,9 +13,24 @@
     --cor-texto-principal-destacado: #000000;
     --cor-bordas-principal: #261D0D;
     
-    --cor-primaria-clara: #d1be9b;
+    --cor-primaria-clara: #F2E2C4;
     --cor-primaria: #D9A23D;
-    --cor-primaria-escura: #bb7929;
+    --cor-primaria-escura: #bb7929;*/
+
+    --cor-fundo-geral:       #E9E9E9; 
+    --cor-fundo-cabecalho:   #2A2F35; 
+    --cor-texto-cabecalho:   #F5F5F5; 
+    --cor-texto-cabecalho-destacado: #FFFFFF; 
+    --cor-bordas-cabecalho:  #3C4249; 
+
+    --cor-fundo-principal:   #FFFFFF; 
+    --cor-texto-principal:   #2B2B2B; 
+    --cor-texto-principal-destacado: #000000; 
+    --cor-bordas-principal:  #CCCCCC; 
+
+    --cor-primaria-clara:    #E8D8B0; 
+    --cor-primaria:          #C9A069; 
+    --cor-primaria-escura:   #A47C46; 
 }
 
 body {
@@ -26,8 +41,12 @@ body {
     margin: 0px;
     padding: 0px;
     
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
+
+h1, h2, h3, h4 {
+    font-family: "Merriweather", Cambria, Georgia, serif;
+  }
 
 li {
     list-style-type: square;
@@ -54,8 +73,9 @@ div#foto-de-perfil {
 }
 
 header div.informacoes-pessoais > h1 {
-    padding-top: 20px;
-    border-top: 1px solid var(--cor-bordas-cabecalho);
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--cor-bordas-cabecalho);
+    margin-top: 0px;
     color: var(--cor-primaria);
     font-size: 25px;
     letter-spacing: 3px;
@@ -90,7 +110,7 @@ header strong {
 header p {
     font-size: 16px;
     text-align: justify;
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 header p.tecnologias {
@@ -136,7 +156,7 @@ main {
 
 main div.caixa-sessoes {
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
 }
 
 main h2.tema-topicos {
